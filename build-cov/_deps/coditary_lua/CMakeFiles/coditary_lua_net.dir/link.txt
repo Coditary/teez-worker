@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcoditary_lua_net.a CMakeFiles/coditary_lua_net.dir/src/net.cpp.o
+/usr/bin/ranlib libcoditary_lua_net.a

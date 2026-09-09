@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcoditary_fs.a CMakeFiles/coditary_fs.dir/src/glob_cache.cpp.o CMakeFiles/coditary_fs.dir/src/glob_walk.cpp.o CMakeFiles/coditary_fs.dir/src/fs.cpp.o
+/usr/bin/ranlib libcoditary_fs.a

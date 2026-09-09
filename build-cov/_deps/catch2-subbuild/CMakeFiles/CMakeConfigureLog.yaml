@@ -1,0 +1,108 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/home/Leodoras/perl5/bin/"
+      - "/home/Leodoras/.cargo/bin/"
+      - "/home/Leodoras/.pyenv/plugins/pyenv-virtualenv/shims/"
+      - "/home/Leodoras/.pyenv/shims/"
+      - "/home/Leodoras/.opencode/bin/"
+      - "/home/Leodoras/go/bin/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
+      - "/home/Leodoras/.nvm/versions/node/v24.16.0/bin/"
+      - "/home/Leodoras/.nix-profile/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/condabin/"
+      - "/usr/lib64/ccache/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/home/Leodoras/.local/bin/"
+      - "/home/Leodoras/Programs/"
+      - "/home/Leodoras/.bun/bin/"
+      - "/home/Leodoras/.pyenv/bin/"
+      - "/bin/"
+    searched_directories:
+      - "/home/Leodoras/perl5/bin/uname"
+      - "/home/Leodoras/.cargo/bin/uname"
+      - "/home/Leodoras/.pyenv/plugins/pyenv-virtualenv/shims/uname"
+      - "/home/Leodoras/.pyenv/shims/uname"
+      - "/home/Leodoras/.opencode/bin/uname"
+      - "/home/Leodoras/go/bin/uname"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/uname"
+      - "/home/Leodoras/.nvm/versions/node/v24.16.0/bin/uname"
+      - "/home/Leodoras/.nix-profile/bin/uname"
+      - "/nix/var/nix/profiles/default/bin/uname"
+      - "/condabin/uname"
+      - "/usr/lib64/ccache/uname"
+      - "/usr/local/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/home/Leodoras/perl5/bin"
+        - "/home/Leodoras/.cargo/bin"
+        - "/home/Leodoras/.pyenv/plugins/pyenv-virtualenv/shims"
+        - "/home/Leodoras/.pyenv/shims"
+        - "/home/Leodoras/.opencode/bin"
+        - "/home/Leodoras/go/bin"
+        - "/home/Leodoras/.opencode/bin"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
+        - "/home/Leodoras/perl5/bin"
+        - "/home/Leodoras/.cargo/bin"
+        - "/home/Leodoras/.pyenv/plugins/pyenv-virtualenv/shims"
+        - "/home/Leodoras/.opencode/bin"
+        - "/home/Leodoras/go/bin"
+        - "/home/Leodoras/.opencode/bin"
+        - "/home/Leodoras/.nvm/versions/node/v24.16.0/bin"
+        - "/home/Leodoras/perl5/bin"
+        - "/home/Leodoras/.cargo/bin"
+        - "/home/Leodoras/.pyenv/plugins/pyenv-virtualenv/shims"
+        - "/home/Leodoras/.opencode/bin"
+        - "/home/Leodoras/go/bin"
+        - "/home/Leodoras/.opencode/bin"
+        - "/home/Leodoras/.nix-profile/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/condabin"
+        - "/usr/lib64/ccache"
+        - "/home/Leodoras/.cargo/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/snapd/snap/bin"
+        - "/home/Leodoras/.local/bin"
+        - "/home/Leodoras/Programs"
+        - "/home/Leodoras/.bun/bin"
+        - "/home/Leodoras/.pyenv/bin"
+        - "/home/Leodoras/.local/bin"
+        - "/home/Leodoras/Programs"
+        - "/home/Leodoras/.bun/bin"
+        - "/home/Leodoras/.pyenv/bin"
+        - "/home/Leodoras/.local/bin"
+        - "/home/Leodoras/Programs"
+        - "/home/Leodoras/.bun/bin"
+        - "/home/Leodoras/.pyenv/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      The system is: Linux - 7.1.3-201.fc44.x86_64 - x86_64
+...

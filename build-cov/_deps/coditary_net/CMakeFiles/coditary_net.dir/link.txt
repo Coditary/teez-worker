@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcoditary_net.a CMakeFiles/coditary_net.dir/src/http.cpp.o
+/usr/bin/ranlib libcoditary_net.a

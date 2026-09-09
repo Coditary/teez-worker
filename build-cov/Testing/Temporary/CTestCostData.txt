@@ -1,0 +1,74 @@
+http.get fetches a public endpoint 2 0.020949
+http.post sends request body 2 0.0117818
+teez-worker prints usage without directory argument 2 0.022621
+teez-worker runs tests from directory 2 0.0215902
+teez-worker accepts --update-snapshots flag 2 0.0222883
+teez-worker --list prints discovered test ids 2 0.0238356
+teez-worker reports missing test files 2 0.020089
+mock_binary creates executable with custom exit code and streams 2 0.0109907
+mock_binary rejects invalid binary names 2 0.0130369
+assert_called fails when mock was never invoked 2 0.0104634
+assert_called_times validates invocation count 2 0.0124228
+assert_called_with validates indexed arguments 2 0.0132712
+mock_binary get_calls reads invocation log 2 0.0127172
+mock_binary get_calls rejects corrupt log entries 2 0.0115753
+mock_file creates readable temporary files 2 0.0122044
+mock_file supports env_key injection 2 0.0105254
+mock_file rejects invalid relative paths 2 0.0104818
+mock_http_server records GET requests with custom headers 2 0.0171204
+mock_http_proxy intercepts http hostnames 2 0.0166455
+mock_http_server records POST bodies and filters requests 2 0.0167985
+mock_http_proxy returns 404 for unconfigured hosts 2 0.0189851
+run_worker executes teez.lua tests and emits NDJSON 2 0.0131227
+run_worker reports assertion failures 2 0.012384
+run_worker supports assert_true and assert_false 2 0.0130768
+list_worker collects test ids without executing them 2 0.0115104
+run_worker supports assert_not_eq 2 0.0120205
+run_worker supports assert_near 2 0.0135361
+run_worker supports assert_throws 2 0.0113576
+run_worker reports assert_throws failure when no error is raised 2 0.0119724
+run_worker supports prio2 string and table assertions 2 0.0114097
+run_worker supports prio3 membership type snapshot and retry assertions 2 0.0362919
+run_worker supports process result assertions 2 0.0124292
+run_worker runs defer and lifecycle hooks even when tests fail 2 0.0183772
+run_worker emits phase events for lifecycle hooks 2 0.0110513
+run_worker supports parameterized test.each cases 2 0.0110437
+run_worker supports test.each.only for focused cases 2 0.0111258
+run_worker supports test flow control modifiers 2 0.0109485
+run_worker supports test.only filtering 2 0.0112723
+run_worker filters tests via TEEZ_FILTERS 2 0.0109145
+run_worker supports describe.only blocks 2 0.0108465
+run_worker retries flaky tests until they pass 2 0.0110237
+run_worker fails after retry attempts are exhausted 2 0.011039
+run_worker supports assert_match_snapshot golden files 2 0.0142839
+run_worker supports mock_binary spy assertions 2 0.0150519
+run_worker supports mock_http_server env injection 2 0.0181659
+run_worker supports mock_http_proxy interception 2 0.0175676
+run_worker supports sys.run auto_respond hooks 1 0
+run_worker supports mock_file temporary config files 2 0.0129279
+run_worker supports vitest expect notation 2 0.0124369
+run_worker rejects missing runtime directory 2 0.0104268
+run_worker reports assertion helper failures 2 0.0113961
+run_worker reports additional assertion helper failures 2 0.011504
+run_worker reports core assertion failures 2 0.518204
+run_worker reports stream and membership assertion failures 2 0.013736
+run_worker reports snapshot and process validation failures 2 0.011835
+run_worker reports invalid test file load errors 2 0.0111129
+run_worker reports test.fails retry progress 2 0.00963443
+run_worker exposes coverage.run_profile from teez.config.lua 2 0.0122876
+run_worker exposes harness engine and process plugin 2 0.0171574
+run_worker applies configurable test id output format 2 0.0124645
+run_worker does not leak sol2 stderr logs for test.fails 2 0.0112297
+run_worker hyperfine harness benchmarks commands 2 0.10052
+run_worker harness probe until and exec helpers 2 0.038774
+run_worker harness phase errors and capture file output 2 0.0383791
+run_worker harness probe timeout and env options 2 0.0642116
+run_worker harness format apply and unknown plugin errors 2 0.0142423
+run_worker exercises harness probe process and tool helpers 2 0.0411117
+run_worker harness caches plugins and supports process spawn 2 0.0143312
+run_worker streams live coverage progress events 2 0.0163669
+run_worker supports additional assertion success paths 2 0.0181508
+run_worker reports coverage assertion failures 2 0.0141965
+embedded worker runtime runs without runtime files on disk 2 0.0119076
+---
+run_worker supports sys.run auto_respond hooks

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/sol2-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

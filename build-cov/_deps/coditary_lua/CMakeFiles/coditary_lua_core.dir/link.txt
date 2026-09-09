@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcoditary_lua_core.a CMakeFiles/coditary_lua_core.dir/src/value_convert.cpp.o
+/usr/bin/ranlib libcoditary_lua_core.a

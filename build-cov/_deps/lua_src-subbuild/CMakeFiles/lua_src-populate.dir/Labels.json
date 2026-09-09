@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/lua_src-subbuild/CMakeFiles/lua_src-populate"
+		},
+		{
+			"file" : "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/lua_src-subbuild/CMakeFiles/lua_src-populate.rule"
+		},
+		{
+			"file" : "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/lua_src-subbuild/CMakeFiles/lua_src-populate-complete.rule"
+		},
+		{
+			"file" : "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/lua_src-subbuild/lua_src-populate-prefix/src/lua_src-populate-stamp/lua_src-populate-build.rule"
+		},
+		{
+			"file" : "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/lua_src-subbuild/lua_src-populate-prefix/src/lua_src-populate-stamp/lua_src-populate-configure.rule"
+		},
+		{
+			"file" : "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/lua_src-subbuild/lua_src-populate-prefix/src/lua_src-populate-stamp/lua_src-populate-download.rule"
+		},
+		{
+			"file" : "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/lua_src-subbuild/lua_src-populate-prefix/src/lua_src-populate-stamp/lua_src-populate-install.rule"
+		},
+		{
+			"file" : "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/lua_src-subbuild/lua_src-populate-prefix/src/lua_src-populate-stamp/lua_src-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/lua_src-subbuild/lua_src-populate-prefix/src/lua_src-populate-stamp/lua_src-populate-patch.rule"
+		},
+		{
+			"file" : "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/lua_src-subbuild/lua_src-populate-prefix/src/lua_src-populate-stamp/lua_src-populate-test.rule"
+		},
+		{
+			"file" : "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/lua_src-subbuild/lua_src-populate-prefix/src/lua_src-populate-stamp/lua_src-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"lua_src-populate"
+		],
+		"name" : "lua_src-populate"
+	}
+}

@@ -1467,6 +1467,121 @@ end)
     REQUIRE(events.find("\"event\":\"pass\"") != std::string::npos);
 }
 
+TEST_CASE("run_worker harness caches plugins and supports process spawn", "[worker][harness]") {
+    const auto temp_dir =
+        std::filesystem::temp_directory_path() / "teez_worker_harness_spawn_cache_test";
+    std::filesystem::remove_all(temp_dir);
+    write_test_file(temp_dir, R"(
+test.describe("Harness spawn", { type = "system" }, function()
+    test.it("reuses bundled harness plugins", function(t)
+        local first = harness.use("process")
+        local second = harness.use("process")
+        local result = first.run({ command = "echo", args = { "cached" } })
+        t.assert_contains(result.stdout, "cached")
+        t.assert_true(second ~= nil)
+    end)
+
+    test.it("runs probe exec with timeout option", function(t)
+        t.assert_true(harness.probe.exec("true", {}, { timeout = 1 }))
+    end)
+end)
+)");
+
+    std::ostringstream output;
+    const int exit_code = teez::worker::run_worker(temp_dir, kRuntimeDir, output);
+    const std::string events = output.str();
+
+    REQUIRE(exit_code == 0);
+    REQUIRE(events.find("harness_loaded") != std::string::npos);
+    REQUIRE(events.find("\"event\":\"pass\"") != std::string::npos);
+}
+
+TEST_CASE("run_worker streams live coverage progress events", "[worker][coverage]") {
+    const auto temp_dir =
+        std::filesystem::temp_directory_path() / "teez_worker_live_coverage_test";
+    std::filesystem::remove_all(temp_dir);
+    std::filesystem::create_directories(temp_dir);
+    std::ofstream(temp_dir / "teez.config.lua") << R"(
+return {
+    coverage = {
+        live = {
+            use_test_progress = true,
+            lines_found = 2,
+            delay_ms = 1,
+        },
+    },
+}
+)";
+    write_test_file(temp_dir, R"(
+test.it("first progress sample", function(t)
+    t.assert_true(true)
+end)
+
+test.it("second progress sample", function(t)
+    t.assert_true(true)
+end)
+)");
+
+    std::ostringstream output;
+    const int exit_code = teez::worker::run_worker(temp_dir, kRuntimeDir, output);
+    const std::string events = output.str();
+
+    REQUIRE(exit_code == 0);
+    REQUIRE(events.find("\"event\":\"coverage\"") != std::string::npos);
+    REQUIRE(events.find("\"source\":\"progress\"") != std::string::npos);
+}
+
+TEST_CASE("run_worker supports additional assertion success paths", "[worker]") {
+    const auto temp_dir =
+        std::filesystem::temp_directory_path() / "teez_worker_more_assert_success_test";
+    std::filesystem::remove_all(temp_dir);
+    std::filesystem::create_directories(temp_dir);
+    const auto snapshot_path = temp_dir / "inline.snap";
+    std::ofstream(snapshot_path) << "payload";
+    write_test_file(temp_dir, std::string(R"(
+test.it("covers snapshot and stream assertions", function(t)
+    t.assert_snapshot("payload", ")") + snapshot_path.string() + R"(")
+    t.assert_exit_not(sys.run("true", {}), 1)
+    t.assert_stderr_contains(sys.run("bash", {"-c", "echo warn >&2"}), "warn")
+    t.assert_stdout_contains(sys.run("bash", {"-c", "echo hello"}), "hello")
+    t.assert_table_has({ id = 42 }, "id", 42)
+    t.assert_table_has({ id = 42 }, "id")
+    t.assert_in({ "a", "b" }, "b")
+    t.assert_empty("")
+    t.assert_not_empty("value")
+end)
+)");
+
+    std::ostringstream output;
+    const int exit_code = teez::worker::run_worker(temp_dir, kRuntimeDir, output);
+
+    REQUIRE(exit_code == 0);
+    REQUIRE(output.str().find("\"event\":\"pass\"") != std::string::npos);
+}
+
+TEST_CASE("run_worker reports coverage assertion failures", "[worker][coverage]") {
+    const auto temp_dir =
+        std::filesystem::temp_directory_path() / "teez_worker_coverage_assert_failures";
+    std::filesystem::remove_all(temp_dir);
+    write_test_file(temp_dir, R"(
+test.it("fails assert_coverage_rate", function(t)
+    t.assert_coverage_rate({ line_rate = 0.1 }, 0.5)
+end)
+
+test.it("fails assert_coverage_threshold", function(t)
+    t.assert_coverage_threshold({ threshold_passed = false, threshold_failures = { "line rate" } })
+end)
+)");
+
+    std::ostringstream output;
+    const int exit_code = teez::worker::run_worker(temp_dir, kRuntimeDir, output);
+    const std::string events = output.str();
+
+    REQUIRE(exit_code == 1);
+    REQUIRE(events.find("assert_coverage_rate failed") != std::string::npos);
+    REQUIRE(events.find("assert_coverage_threshold failed") != std::string::npos);
+}
+
 TEST_CASE("embedded worker runtime runs without runtime files on disk", "[worker]") {
     const auto temp_dir =
         std::filesystem::temp_directory_path() / "teez-embedded-runtime-test";

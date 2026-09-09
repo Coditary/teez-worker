@@ -1,0 +1,1545 @@
+Start testing: Sep 09 22:20 CEST
+----------------------------------------------------------
+1/72 Testing: http.get fetches a public endpoint
+1/72 Test: http.get fetches a public endpoint
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "http.get fetches a public endpoint"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"http.get fetches a public endpoint" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "http.get fetches a public endpoint"
+Randomness seeded to: 2120344413
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+teez_worker_tests is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+http.get fetches a public endpoint
+-------------------------------------------------------------------------------
+/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/tests/test_http.cpp:5
+...............................................................................
+
+/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/tests/test_http.cpp:11: 
+warning:
+  network unavailable, skipping: http request failed: Failure when receiving
+  data from the peer
+
+===============================================================================
+test cases: 1 | 1 passed
+assertions: - none -
+
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"http.get fetches a public endpoint" end time: Sep 09 22:20 CEST
+"http.get fetches a public endpoint" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/72 Testing: http.post sends request body
+2/72 Test: http.post sends request body
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "http.post sends request body"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"http.post sends request body" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "http.post sends request body"
+Randomness seeded to: 3817510066
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+teez_worker_tests is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+http.post sends request body
+-------------------------------------------------------------------------------
+/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/tests/test_http.cpp:15
+...............................................................................
+
+/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/tests/test_http.cpp:22: 
+warning:
+  network unavailable, skipping: http request failed: Failure when receiving
+  data from the peer
+
+===============================================================================
+test cases: 1 | 1 passed
+assertions: - none -
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"http.post sends request body" end time: Sep 09 22:20 CEST
+"http.post sends request body" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/72 Testing: teez-worker prints usage without directory argument
+3/72 Test: teez-worker prints usage without directory argument
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "teez-worker prints usage without directory argument"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"teez-worker prints usage without directory argument" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "teez-worker prints usage without directory argument"
+Randomness seeded to: 2328399885
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"teez-worker prints usage without directory argument" end time: Sep 09 22:20 CEST
+"teez-worker prints usage without directory argument" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/72 Testing: teez-worker runs tests from directory
+4/72 Test: teez-worker runs tests from directory
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "teez-worker runs tests from directory"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"teez-worker runs tests from directory" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "teez-worker runs tests from directory"
+Randomness seeded to: 29718079
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"teez-worker runs tests from directory" end time: Sep 09 22:20 CEST
+"teez-worker runs tests from directory" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/72 Testing: teez-worker accepts --update-snapshots flag
+5/72 Test: teez-worker accepts --update-snapshots flag
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "teez-worker accepts --update-snapshots flag"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"teez-worker accepts --update-snapshots flag" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "teez-worker accepts --update-snapshots flag"
+Randomness seeded to: 2281008215
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"teez-worker accepts --update-snapshots flag" end time: Sep 09 22:20 CEST
+"teez-worker accepts --update-snapshots flag" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/72 Testing: teez-worker --list prints discovered test ids
+6/72 Test: teez-worker --list prints discovered test ids
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "teez-worker --list prints discovered test ids"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"teez-worker --list prints discovered test ids" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "teez-worker --list prints discovered test ids"
+Randomness seeded to: 30389229
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"teez-worker --list prints discovered test ids" end time: Sep 09 22:20 CEST
+"teez-worker --list prints discovered test ids" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/72 Testing: teez-worker reports missing test files
+7/72 Test: teez-worker reports missing test files
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "teez-worker reports missing test files"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"teez-worker reports missing test files" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "teez-worker reports missing test files"
+Randomness seeded to: 740736012
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"teez-worker reports missing test files" end time: Sep 09 22:20 CEST
+"teez-worker reports missing test files" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/72 Testing: mock_binary creates executable with custom exit code and streams
+8/72 Test: mock_binary creates executable with custom exit code and streams
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "mock_binary creates executable with custom exit code and streams"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"mock_binary creates executable with custom exit code and streams" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "mock_binary creates executable with custom exit code and streams"
+Randomness seeded to: 3814187243
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"mock_binary creates executable with custom exit code and streams" end time: Sep 09 22:20 CEST
+"mock_binary creates executable with custom exit code and streams" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/72 Testing: mock_binary rejects invalid binary names
+9/72 Test: mock_binary rejects invalid binary names
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "mock_binary rejects invalid binary names"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"mock_binary rejects invalid binary names" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "mock_binary rejects invalid binary names"
+Randomness seeded to: 3007782816
+[sol2] An exception occurred: mock_binary failed: binary name must be a simple filename
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"mock_binary rejects invalid binary names" end time: Sep 09 22:20 CEST
+"mock_binary rejects invalid binary names" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/72 Testing: assert_called fails when mock was never invoked
+10/72 Test: assert_called fails when mock was never invoked
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "assert_called fails when mock was never invoked"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"assert_called fails when mock was never invoked" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "assert_called fails when mock was never invoked"
+Randomness seeded to: 2871105848
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"assert_called fails when mock was never invoked" end time: Sep 09 22:20 CEST
+"assert_called fails when mock was never invoked" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/72 Testing: assert_called_times validates invocation count
+11/72 Test: assert_called_times validates invocation count
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "assert_called_times validates invocation count"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"assert_called_times validates invocation count" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "assert_called_times validates invocation count"
+Randomness seeded to: 772933377
+===============================================================================
+All tests passed (5 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"assert_called_times validates invocation count" end time: Sep 09 22:20 CEST
+"assert_called_times validates invocation count" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/72 Testing: assert_called_with validates indexed arguments
+12/72 Test: assert_called_with validates indexed arguments
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "assert_called_with validates indexed arguments"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"assert_called_with validates indexed arguments" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "assert_called_with validates indexed arguments"
+Randomness seeded to: 2104545806
+===============================================================================
+All tests passed (9 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"assert_called_with validates indexed arguments" end time: Sep 09 22:20 CEST
+"assert_called_with validates indexed arguments" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/72 Testing: mock_binary get_calls reads invocation log
+13/72 Test: mock_binary get_calls reads invocation log
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "mock_binary get_calls reads invocation log"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"mock_binary get_calls reads invocation log" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "mock_binary get_calls reads invocation log"
+Randomness seeded to: 1715981255
+===============================================================================
+All tests passed (5 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"mock_binary get_calls reads invocation log" end time: Sep 09 22:20 CEST
+"mock_binary get_calls reads invocation log" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/72 Testing: mock_binary get_calls rejects corrupt log entries
+14/72 Test: mock_binary get_calls rejects corrupt log entries
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "mock_binary get_calls rejects corrupt log entries"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"mock_binary get_calls rejects corrupt log entries" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "mock_binary get_calls rejects corrupt log entries"
+Randomness seeded to: 4248022199
+[sol2] An exception occurred: mock_binary failed: invalid calls.log entry
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"mock_binary get_calls rejects corrupt log entries" end time: Sep 09 22:20 CEST
+"mock_binary get_calls rejects corrupt log entries" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/72 Testing: mock_file creates readable temporary files
+15/72 Test: mock_file creates readable temporary files
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "mock_file creates readable temporary files"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"mock_file creates readable temporary files" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "mock_file creates readable temporary files"
+Randomness seeded to: 4120864596
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"mock_file creates readable temporary files" end time: Sep 09 22:20 CEST
+"mock_file creates readable temporary files" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/72 Testing: mock_file supports env_key injection
+16/72 Test: mock_file supports env_key injection
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "mock_file supports env_key injection"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"mock_file supports env_key injection" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "mock_file supports env_key injection"
+Randomness seeded to: 980290605
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"mock_file supports env_key injection" end time: Sep 09 22:20 CEST
+"mock_file supports env_key injection" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/72 Testing: mock_file rejects invalid relative paths
+17/72 Test: mock_file rejects invalid relative paths
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "mock_file rejects invalid relative paths"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"mock_file rejects invalid relative paths" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "mock_file rejects invalid relative paths"
+Randomness seeded to: 3831779991
+[sol2] An exception occurred: mock_file failed: path must not be empty
+[sol2] An exception occurred: mock_file failed: path must be relative
+[sol2] An exception occurred: mock_file failed: path must not contain '..'
+===============================================================================
+All tests passed (6 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"mock_file rejects invalid relative paths" end time: Sep 09 22:20 CEST
+"mock_file rejects invalid relative paths" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/72 Testing: mock_http_server records GET requests with custom headers
+18/72 Test: mock_http_server records GET requests with custom headers
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "mock_http_server records GET requests with custom headers"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"mock_http_server records GET requests with custom headers" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "mock_http_server records GET requests with custom headers"
+Randomness seeded to: 137159433
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"mock_http_server records GET requests with custom headers" end time: Sep 09 22:20 CEST
+"mock_http_server records GET requests with custom headers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/72 Testing: mock_http_proxy intercepts http hostnames
+19/72 Test: mock_http_proxy intercepts http hostnames
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "mock_http_proxy intercepts http hostnames"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"mock_http_proxy intercepts http hostnames" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "mock_http_proxy intercepts http hostnames"
+Randomness seeded to: 3883974201
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"mock_http_proxy intercepts http hostnames" end time: Sep 09 22:20 CEST
+"mock_http_proxy intercepts http hostnames" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/72 Testing: mock_http_server records POST bodies and filters requests
+20/72 Test: mock_http_server records POST bodies and filters requests
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "mock_http_server records POST bodies and filters requests"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"mock_http_server records POST bodies and filters requests" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "mock_http_server records POST bodies and filters requests"
+Randomness seeded to: 4112048591
+===============================================================================
+All tests passed (6 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"mock_http_server records POST bodies and filters requests" end time: Sep 09 22:20 CEST
+"mock_http_server records POST bodies and filters requests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/72 Testing: mock_http_proxy returns 404 for unconfigured hosts
+21/72 Test: mock_http_proxy returns 404 for unconfigured hosts
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "mock_http_proxy returns 404 for unconfigured hosts"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"mock_http_proxy returns 404 for unconfigured hosts" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "mock_http_proxy returns 404 for unconfigured hosts"
+Randomness seeded to: 2534097713
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"mock_http_proxy returns 404 for unconfigured hosts" end time: Sep 09 22:20 CEST
+"mock_http_proxy returns 404 for unconfigured hosts" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/72 Testing: run_worker executes teez.lua tests and emits NDJSON
+22/72 Test: run_worker executes teez.lua tests and emits NDJSON
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker executes teez.lua tests and emits NDJSON"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker executes teez.lua tests and emits NDJSON" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker executes teez.lua tests and emits NDJSON"
+Randomness seeded to: 388580951
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker executes teez.lua tests and emits NDJSON" end time: Sep 09 22:20 CEST
+"run_worker executes teez.lua tests and emits NDJSON" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/72 Testing: run_worker reports assertion failures
+23/72 Test: run_worker reports assertion failures
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker reports assertion failures"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker reports assertion failures" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker reports assertion failures"
+Randomness seeded to: 3502938769
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker reports assertion failures" end time: Sep 09 22:20 CEST
+"run_worker reports assertion failures" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/72 Testing: run_worker supports assert_true and assert_false
+24/72 Test: run_worker supports assert_true and assert_false
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker supports assert_true and assert_false"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker supports assert_true and assert_false" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker supports assert_true and assert_false"
+Randomness seeded to: 741778873
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker supports assert_true and assert_false" end time: Sep 09 22:20 CEST
+"run_worker supports assert_true and assert_false" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/72 Testing: list_worker collects test ids without executing them
+25/72 Test: list_worker collects test ids without executing them
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "list_worker collects test ids without executing them"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"list_worker collects test ids without executing them" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "list_worker collects test ids without executing them"
+Randomness seeded to: 2947182642
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"list_worker collects test ids without executing them" end time: Sep 09 22:20 CEST
+"list_worker collects test ids without executing them" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/72 Testing: run_worker supports assert_not_eq
+26/72 Test: run_worker supports assert_not_eq
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker supports assert_not_eq"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker supports assert_not_eq" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker supports assert_not_eq"
+Randomness seeded to: 137643393
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker supports assert_not_eq" end time: Sep 09 22:20 CEST
+"run_worker supports assert_not_eq" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/72 Testing: run_worker supports assert_near
+27/72 Test: run_worker supports assert_near
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker supports assert_near"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker supports assert_near" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker supports assert_near"
+Randomness seeded to: 3971761848
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker supports assert_near" end time: Sep 09 22:20 CEST
+"run_worker supports assert_near" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/72 Testing: run_worker supports assert_throws
+28/72 Test: run_worker supports assert_throws
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker supports assert_throws"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker supports assert_throws" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker supports assert_throws"
+Randomness seeded to: 276762982
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker supports assert_throws" end time: Sep 09 22:20 CEST
+"run_worker supports assert_throws" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/72 Testing: run_worker reports assert_throws failure when no error is raised
+29/72 Test: run_worker reports assert_throws failure when no error is raised
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker reports assert_throws failure when no error is raised"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker reports assert_throws failure when no error is raised" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker reports assert_throws failure when no error is raised"
+Randomness seeded to: 2608104037
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker reports assert_throws failure when no error is raised" end time: Sep 09 22:20 CEST
+"run_worker reports assert_throws failure when no error is raised" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/72 Testing: run_worker supports prio2 string and table assertions
+30/72 Test: run_worker supports prio2 string and table assertions
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker supports prio2 string and table assertions"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker supports prio2 string and table assertions" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker supports prio2 string and table assertions"
+Randomness seeded to: 2024856501
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker supports prio2 string and table assertions" end time: Sep 09 22:20 CEST
+"run_worker supports prio2 string and table assertions" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/72 Testing: run_worker supports prio3 membership type snapshot and retry assertions
+31/72 Test: run_worker supports prio3 membership type snapshot and retry assertions
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker supports prio3 membership type snapshot and retry assertions"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker supports prio3 membership type snapshot and retry assertions" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker supports prio3 membership type snapshot and retry assertions"
+Randomness seeded to: 3771622396
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker supports prio3 membership type snapshot and retry assertions" end time: Sep 09 22:20 CEST
+"run_worker supports prio3 membership type snapshot and retry assertions" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/72 Testing: run_worker supports process result assertions
+32/72 Test: run_worker supports process result assertions
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker supports process result assertions"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker supports process result assertions" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker supports process result assertions"
+Randomness seeded to: 1276963463
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker supports process result assertions" end time: Sep 09 22:20 CEST
+"run_worker supports process result assertions" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/72 Testing: run_worker runs defer and lifecycle hooks even when tests fail
+33/72 Test: run_worker runs defer and lifecycle hooks even when tests fail
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker runs defer and lifecycle hooks even when tests fail"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker runs defer and lifecycle hooks even when tests fail" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker runs defer and lifecycle hooks even when tests fail"
+Randomness seeded to: 3886096423
+===============================================================================
+All tests passed (13 assertions in 1 test case)
+
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker runs defer and lifecycle hooks even when tests fail" end time: Sep 09 22:20 CEST
+"run_worker runs defer and lifecycle hooks even when tests fail" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/72 Testing: run_worker emits phase events for lifecycle hooks
+34/72 Test: run_worker emits phase events for lifecycle hooks
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker emits phase events for lifecycle hooks"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker emits phase events for lifecycle hooks" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker emits phase events for lifecycle hooks"
+Randomness seeded to: 1839368569
+===============================================================================
+All tests passed (7 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker emits phase events for lifecycle hooks" end time: Sep 09 22:20 CEST
+"run_worker emits phase events for lifecycle hooks" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/72 Testing: run_worker supports parameterized test.each cases
+35/72 Test: run_worker supports parameterized test.each cases
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker supports parameterized test.each cases"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker supports parameterized test.each cases" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker supports parameterized test.each cases"
+Randomness seeded to: 2938799843
+===============================================================================
+All tests passed (5 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker supports parameterized test.each cases" end time: Sep 09 22:20 CEST
+"run_worker supports parameterized test.each cases" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/72 Testing: run_worker supports test.each.only for focused cases
+36/72 Test: run_worker supports test.each.only for focused cases
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker supports test.each.only for focused cases"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker supports test.each.only for focused cases" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker supports test.each.only for focused cases"
+Randomness seeded to: 1448723981
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker supports test.each.only for focused cases" end time: Sep 09 22:20 CEST
+"run_worker supports test.each.only for focused cases" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/72 Testing: run_worker supports test flow control modifiers
+37/72 Test: run_worker supports test flow control modifiers
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker supports test flow control modifiers"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker supports test flow control modifiers" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker supports test flow control modifiers"
+Randomness seeded to: 4170668946
+===============================================================================
+All tests passed (7 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker supports test flow control modifiers" end time: Sep 09 22:20 CEST
+"run_worker supports test flow control modifiers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/72 Testing: run_worker supports test.only filtering
+38/72 Test: run_worker supports test.only filtering
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker supports test.only filtering"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker supports test.only filtering" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker supports test.only filtering"
+Randomness seeded to: 2470179569
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker supports test.only filtering" end time: Sep 09 22:20 CEST
+"run_worker supports test.only filtering" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/72 Testing: run_worker filters tests via TEEZ_FILTERS
+39/72 Test: run_worker filters tests via TEEZ_FILTERS
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker filters tests via TEEZ_FILTERS"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker filters tests via TEEZ_FILTERS" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker filters tests via TEEZ_FILTERS"
+Randomness seeded to: 910918174
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker filters tests via TEEZ_FILTERS" end time: Sep 09 22:20 CEST
+"run_worker filters tests via TEEZ_FILTERS" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/72 Testing: run_worker supports describe.only blocks
+40/72 Test: run_worker supports describe.only blocks
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker supports describe.only blocks"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker supports describe.only blocks" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker supports describe.only blocks"
+Randomness seeded to: 3038772352
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker supports describe.only blocks" end time: Sep 09 22:20 CEST
+"run_worker supports describe.only blocks" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/72 Testing: run_worker retries flaky tests until they pass
+41/72 Test: run_worker retries flaky tests until they pass
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker retries flaky tests until they pass"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker retries flaky tests until they pass" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker retries flaky tests until they pass"
+Randomness seeded to: 3855941424
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker retries flaky tests until they pass" end time: Sep 09 22:20 CEST
+"run_worker retries flaky tests until they pass" time elapsed: 00:00:00
+----------------------------------------------------------
+
+42/72 Testing: run_worker fails after retry attempts are exhausted
+42/72 Test: run_worker fails after retry attempts are exhausted
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker fails after retry attempts are exhausted"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker fails after retry attempts are exhausted" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker fails after retry attempts are exhausted"
+Randomness seeded to: 258786929
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker fails after retry attempts are exhausted" end time: Sep 09 22:20 CEST
+"run_worker fails after retry attempts are exhausted" time elapsed: 00:00:00
+----------------------------------------------------------
+
+43/72 Testing: run_worker supports assert_match_snapshot golden files
+43/72 Test: run_worker supports assert_match_snapshot golden files
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker supports assert_match_snapshot golden files"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker supports assert_match_snapshot golden files" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker supports assert_match_snapshot golden files"
+Randomness seeded to: 2495157654
+===============================================================================
+All tests passed (5 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker supports assert_match_snapshot golden files" end time: Sep 09 22:20 CEST
+"run_worker supports assert_match_snapshot golden files" time elapsed: 00:00:00
+----------------------------------------------------------
+
+44/72 Testing: run_worker supports mock_binary spy assertions
+44/72 Test: run_worker supports mock_binary spy assertions
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker supports mock_binary spy assertions"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker supports mock_binary spy assertions" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker supports mock_binary spy assertions"
+Randomness seeded to: 2746415206
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker supports mock_binary spy assertions" end time: Sep 09 22:20 CEST
+"run_worker supports mock_binary spy assertions" time elapsed: 00:00:00
+----------------------------------------------------------
+
+45/72 Testing: run_worker supports mock_http_server env injection
+45/72 Test: run_worker supports mock_http_server env injection
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker supports mock_http_server env injection"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker supports mock_http_server env injection" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker supports mock_http_server env injection"
+Randomness seeded to: 92395109
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker supports mock_http_server env injection" end time: Sep 09 22:20 CEST
+"run_worker supports mock_http_server env injection" time elapsed: 00:00:00
+----------------------------------------------------------
+
+46/72 Testing: run_worker supports mock_http_proxy interception
+46/72 Test: run_worker supports mock_http_proxy interception
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker supports mock_http_proxy interception"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker supports mock_http_proxy interception" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker supports mock_http_proxy interception"
+Randomness seeded to: 2779404600
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker supports mock_http_proxy interception" end time: Sep 09 22:20 CEST
+"run_worker supports mock_http_proxy interception" time elapsed: 00:00:00
+----------------------------------------------------------
+
+47/72 Testing: run_worker supports sys.run auto_respond hooks
+47/72 Test: run_worker supports sys.run auto_respond hooks
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker supports sys.run auto_respond hooks"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker supports sys.run auto_respond hooks" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker supports sys.run auto_respond hooks"
+Randomness seeded to: 1179446193
+[sol2] An exception occurred: failed to create interactive pseudo-terminal
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+teez_worker_tests is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+run_worker supports sys.run auto_respond hooks
+-------------------------------------------------------------------------------
+/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/tests/test_runner.cpp:752
+...............................................................................
+
+/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/tests/test_runner.cpp:780: FAILED:
+  REQUIRE( exit_code == 0 )
+with expansion:
+  1 == 0
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Failed.
+"run_worker supports sys.run auto_respond hooks" end time: Sep 09 22:20 CEST
+"run_worker supports sys.run auto_respond hooks" time elapsed: 00:00:00
+----------------------------------------------------------
+
+48/72 Testing: run_worker supports mock_file temporary config files
+48/72 Test: run_worker supports mock_file temporary config files
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker supports mock_file temporary config files"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker supports mock_file temporary config files" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker supports mock_file temporary config files"
+Randomness seeded to: 3246067621
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker supports mock_file temporary config files" end time: Sep 09 22:20 CEST
+"run_worker supports mock_file temporary config files" time elapsed: 00:00:00
+----------------------------------------------------------
+
+49/72 Testing: run_worker supports vitest expect notation
+49/72 Test: run_worker supports vitest expect notation
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker supports vitest expect notation"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker supports vitest expect notation" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker supports vitest expect notation"
+Randomness seeded to: 274183146
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker supports vitest expect notation" end time: Sep 09 22:20 CEST
+"run_worker supports vitest expect notation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+50/72 Testing: run_worker rejects missing runtime directory
+50/72 Test: run_worker rejects missing runtime directory
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker rejects missing runtime directory"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker rejects missing runtime directory" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker rejects missing runtime directory"
+Randomness seeded to: 3714569685
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker rejects missing runtime directory" end time: Sep 09 22:20 CEST
+"run_worker rejects missing runtime directory" time elapsed: 00:00:00
+----------------------------------------------------------
+
+51/72 Testing: run_worker reports assertion helper failures
+51/72 Test: run_worker reports assertion helper failures
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker reports assertion helper failures"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker reports assertion helper failures" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker reports assertion helper failures"
+Randomness seeded to: 215327082
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker reports assertion helper failures" end time: Sep 09 22:20 CEST
+"run_worker reports assertion helper failures" time elapsed: 00:00:00
+----------------------------------------------------------
+
+52/72 Testing: run_worker reports additional assertion helper failures
+52/72 Test: run_worker reports additional assertion helper failures
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker reports additional assertion helper failures"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker reports additional assertion helper failures" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker reports additional assertion helper failures"
+Randomness seeded to: 1380812223
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker reports additional assertion helper failures" end time: Sep 09 22:20 CEST
+"run_worker reports additional assertion helper failures" time elapsed: 00:00:00
+----------------------------------------------------------
+
+53/72 Testing: run_worker reports core assertion failures
+53/72 Test: run_worker reports core assertion failures
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker reports core assertion failures"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker reports core assertion failures" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker reports core assertion failures"
+Randomness seeded to: 1760752442
+[sol2] An error occurred and has been passed to an error handler: sol: runtime error: [string "..."]:6: assert_table_has failed: key not found
+stack traceback:
+	[C]: in function 'base.error'
+	[string "..."]:6: in main chunk
+	[C]: in field 'assert_table_has'
+	/tmp/teez_worker_core_assert_failures/smoke.teez.lua:46: in function </tmp/teez_worker_core_assert_failures/smoke.teez.lua:45>
+	[C]: in function 'base.__teez_run_it'
+	...Coditary-Bundle/teez/teez-worker/runtime/teez-worker.lua:237: in upvalue 'execute_test'
+	...Coditary-Bundle/teez/teez-worker/runtime/teez-worker.lua:308: in function 'base.__teez_run_all_tests'
+[sol2] An exception occurred: sol: runtime error: [string "..."]:6: assert_table_has failed: key not found
+stack traceback:
+	[C]: in function 'base.error'
+	[string "..."]:6: in main chunk
+	[C]: in field 'assert_table_has'
+	/tmp/teez_worker_core_assert_failures/smoke.teez.lua:46: in function </tmp/teez_worker_core_assert_failures/smoke.teez.lua:45>
+	[C]: in function 'base.__teez_run_it'
+	...Coditary-Bundle/teez/teez-worker/runtime/teez-worker.lua:237: in upvalue 'execute_test'
+	...Coditary-Bundle/teez/teez-worker/runtime/teez-worker.lua:308: in function 'base.__teez_run_all_tests'
+===============================================================================
+All tests passed (13 assertions in 1 test case)
+
+<end of output>
+Test time =   1.04 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker reports core assertion failures" end time: Sep 09 22:20 CEST
+"run_worker reports core assertion failures" time elapsed: 00:00:01
+----------------------------------------------------------
+
+54/72 Testing: run_worker reports stream and membership assertion failures
+54/72 Test: run_worker reports stream and membership assertion failures
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker reports stream and membership assertion failures"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker reports stream and membership assertion failures" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker reports stream and membership assertion failures"
+Randomness seeded to: 3339054841
+[sol2] An error occurred and has been passed to an error handler: sol: runtime error: [string "..."]:10: assert_table_has failed: value mismatch
+stack traceback:
+	[C]: in function 'base.error'
+	[string "..."]:10: in main chunk
+	[C]: in field 'assert_table_has'
+	/tmp/teez_worker_stream_assert_failures/smoke.teez.lua:13: in function </tmp/teez_worker_stream_assert_failures/smoke.teez.lua:12>
+	[C]: in function 'base.__teez_run_it'
+	...Coditary-Bundle/teez/teez-worker/runtime/teez-worker.lua:237: in upvalue 'execute_test'
+	...Coditary-Bundle/teez/teez-worker/runtime/teez-worker.lua:308: in function 'base.__teez_run_all_tests'
+[sol2] An exception occurred: sol: runtime error: [string "..."]:10: assert_table_has failed: value mismatch
+stack traceback:
+	[C]: in function 'base.error'
+	[string "..."]:10: in main chunk
+	[C]: in field 'assert_table_has'
+	/tmp/teez_worker_stream_assert_failures/smoke.teez.lua:13: in function </tmp/teez_worker_stream_assert_failures/smoke.teez.lua:12>
+	[C]: in function 'base.__teez_run_it'
+	...Coditary-Bundle/teez/teez-worker/runtime/teez-worker.lua:237: in upvalue 'execute_test'
+	...Coditary-Bundle/teez/teez-worker/runtime/teez-worker.lua:308: in function 'base.__teez_run_all_tests'
+===============================================================================
+All tests passed (5 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker reports stream and membership assertion failures" end time: Sep 09 22:20 CEST
+"run_worker reports stream and membership assertion failures" time elapsed: 00:00:00
+----------------------------------------------------------
+
+55/72 Testing: run_worker reports snapshot and process validation failures
+55/72 Test: run_worker reports snapshot and process validation failures
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker reports snapshot and process validation failures"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker reports snapshot and process validation failures" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker reports snapshot and process validation failures"
+Randomness seeded to: 2517013887
+===============================================================================
+All tests passed (5 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker reports snapshot and process validation failures" end time: Sep 09 22:20 CEST
+"run_worker reports snapshot and process validation failures" time elapsed: 00:00:00
+----------------------------------------------------------
+
+56/72 Testing: run_worker reports invalid test file load errors
+56/72 Test: run_worker reports invalid test file load errors
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker reports invalid test file load errors"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker reports invalid test file load errors" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker reports invalid test file load errors"
+Randomness seeded to: 1952470097
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker reports invalid test file load errors" end time: Sep 09 22:20 CEST
+"run_worker reports invalid test file load errors" time elapsed: 00:00:00
+----------------------------------------------------------
+
+57/72 Testing: run_worker reports test.fails retry progress
+57/72 Test: run_worker reports test.fails retry progress
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker reports test.fails retry progress"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker reports test.fails retry progress" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker reports test.fails retry progress"
+Randomness seeded to: 1261384544
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker reports test.fails retry progress" end time: Sep 09 22:20 CEST
+"run_worker reports test.fails retry progress" time elapsed: 00:00:00
+----------------------------------------------------------
+
+58/72 Testing: run_worker exposes coverage.run_profile from teez.config.lua
+58/72 Test: run_worker exposes coverage.run_profile from teez.config.lua
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker exposes coverage.run_profile from teez.config.lua"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker exposes coverage.run_profile from teez.config.lua" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker exposes coverage.run_profile from teez.config.lua"
+Randomness seeded to: 17848708
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker exposes coverage.run_profile from teez.config.lua" end time: Sep 09 22:20 CEST
+"run_worker exposes coverage.run_profile from teez.config.lua" time elapsed: 00:00:00
+----------------------------------------------------------
+
+59/72 Testing: run_worker exposes harness engine and process plugin
+59/72 Test: run_worker exposes harness engine and process plugin
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker exposes harness engine and process plugin"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker exposes harness engine and process plugin" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker exposes harness engine and process plugin"
+Randomness seeded to: 3318751242
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker exposes harness engine and process plugin" end time: Sep 09 22:20 CEST
+"run_worker exposes harness engine and process plugin" time elapsed: 00:00:00
+----------------------------------------------------------
+
+60/72 Testing: run_worker applies configurable test id output format
+60/72 Test: run_worker applies configurable test id output format
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker applies configurable test id output format"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker applies configurable test id output format" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker applies configurable test id output format"
+Randomness seeded to: 38181105
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker applies configurable test id output format" end time: Sep 09 22:20 CEST
+"run_worker applies configurable test id output format" time elapsed: 00:00:00
+----------------------------------------------------------
+
+61/72 Testing: run_worker does not leak sol2 stderr logs for test.fails
+61/72 Test: run_worker does not leak sol2 stderr logs for test.fails
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker does not leak sol2 stderr logs for test.fails"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker does not leak sol2 stderr logs for test.fails" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker does not leak sol2 stderr logs for test.fails"
+Randomness seeded to: 2371983521
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker does not leak sol2 stderr logs for test.fails" end time: Sep 09 22:20 CEST
+"run_worker does not leak sol2 stderr logs for test.fails" time elapsed: 00:00:00
+----------------------------------------------------------
+
+62/72 Testing: run_worker hyperfine harness benchmarks commands
+62/72 Test: run_worker hyperfine harness benchmarks commands
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker hyperfine harness benchmarks commands"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker hyperfine harness benchmarks commands" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker hyperfine harness benchmarks commands"
+Randomness seeded to: 3048117883
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker hyperfine harness benchmarks commands" end time: Sep 09 22:20 CEST
+"run_worker hyperfine harness benchmarks commands" time elapsed: 00:00:00
+----------------------------------------------------------
+
+63/72 Testing: run_worker harness probe until and exec helpers
+63/72 Test: run_worker harness probe until and exec helpers
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker harness probe until and exec helpers"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker harness probe until and exec helpers" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker harness probe until and exec helpers"
+Randomness seeded to: 1510667565
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker harness probe until and exec helpers" end time: Sep 09 22:20 CEST
+"run_worker harness probe until and exec helpers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+64/72 Testing: run_worker harness phase errors and capture file output
+64/72 Test: run_worker harness phase errors and capture file output
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker harness phase errors and capture file output"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker harness phase errors and capture file output" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker harness phase errors and capture file output"
+Randomness seeded to: 1356762479
+[sol2] An exception occurred: harness.phase failed: /tmp/teez_worker_harness_phase_capture_test/smoke.teez.lua:24: phase boom
+stack traceback:
+	[C]: in function 'base.error'
+	/tmp/teez_worker_harness_phase_capture_test/smoke.teez.lua:24: in function </tmp/teez_worker_harness_phase_capture_test/smoke.teez.lua:23>
+	[C]: in field 'phase'
+	/tmp/teez_worker_harness_phase_capture_test/smoke.teez.lua:23: in function </tmp/teez_worker_harness_phase_capture_test/smoke.teez.lua:22>
+	[C]: in function 'base.__teez_run_it'
+	...Coditary-Bundle/teez/teez-worker/runtime/teez-worker.lua:237: in upvalue 'execute_test'
+	...Coditary-Bundle/teez/teez-worker/runtime/teez-worker.lua:308: in function 'base.__teez_run_all_tests'
+===============================================================================
+All tests passed (5 assertions in 1 test case)
+
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker harness phase errors and capture file output" end time: Sep 09 22:20 CEST
+"run_worker harness phase errors and capture file output" time elapsed: 00:00:00
+----------------------------------------------------------
+
+65/72 Testing: run_worker harness probe timeout and env options
+65/72 Test: run_worker harness probe timeout and env options
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker harness probe timeout and env options"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker harness probe timeout and env options" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker harness probe timeout and env options"
+Randomness seeded to: 2244856527
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker harness probe timeout and env options" end time: Sep 09 22:20 CEST
+"run_worker harness probe timeout and env options" time elapsed: 00:00:00
+----------------------------------------------------------
+
+66/72 Testing: run_worker harness format apply and unknown plugin errors
+66/72 Test: run_worker harness format apply and unknown plugin errors
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker harness format apply and unknown plugin errors"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker harness format apply and unknown plugin errors" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker harness format apply and unknown plugin errors"
+Randomness seeded to: 3797373354
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker harness format apply and unknown plugin errors" end time: Sep 09 22:20 CEST
+"run_worker harness format apply and unknown plugin errors" time elapsed: 00:00:00
+----------------------------------------------------------
+
+67/72 Testing: run_worker exercises harness probe process and tool helpers
+67/72 Test: run_worker exercises harness probe process and tool helpers
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker exercises harness probe process and tool helpers"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker exercises harness probe process and tool helpers" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker exercises harness probe process and tool helpers"
+Randomness seeded to: 3717909980
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker exercises harness probe process and tool helpers" end time: Sep 09 22:20 CEST
+"run_worker exercises harness probe process and tool helpers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+68/72 Testing: run_worker harness caches plugins and supports process spawn
+68/72 Test: run_worker harness caches plugins and supports process spawn
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker harness caches plugins and supports process spawn"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker harness caches plugins and supports process spawn" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker harness caches plugins and supports process spawn"
+Randomness seeded to: 990007296
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker harness caches plugins and supports process spawn" end time: Sep 09 22:20 CEST
+"run_worker harness caches plugins and supports process spawn" time elapsed: 00:00:00
+----------------------------------------------------------
+
+69/72 Testing: run_worker streams live coverage progress events
+69/72 Test: run_worker streams live coverage progress events
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker streams live coverage progress events"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker streams live coverage progress events" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker streams live coverage progress events"
+Randomness seeded to: 292244392
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker streams live coverage progress events" end time: Sep 09 22:20 CEST
+"run_worker streams live coverage progress events" time elapsed: 00:00:00
+----------------------------------------------------------
+
+70/72 Testing: run_worker supports additional assertion success paths
+70/72 Test: run_worker supports additional assertion success paths
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker supports additional assertion success paths"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker supports additional assertion success paths" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker supports additional assertion success paths"
+Randomness seeded to: 2283331902
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker supports additional assertion success paths" end time: Sep 09 22:20 CEST
+"run_worker supports additional assertion success paths" time elapsed: 00:00:00
+----------------------------------------------------------
+
+71/72 Testing: run_worker reports coverage assertion failures
+71/72 Test: run_worker reports coverage assertion failures
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "run_worker reports coverage assertion failures"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"run_worker reports coverage assertion failures" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "run_worker reports coverage assertion failures"
+Randomness seeded to: 663650345
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"run_worker reports coverage assertion failures" end time: Sep 09 22:20 CEST
+"run_worker reports coverage assertion failures" time elapsed: 00:00:00
+----------------------------------------------------------
+
+72/72 Testing: embedded worker runtime runs without runtime files on disk
+72/72 Test: embedded worker runtime runs without runtime files on disk
+Command: "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests" "embedded worker runtime runs without runtime files on disk"
+Directory: /home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov
+"embedded worker runtime runs without runtime files on disk" start time: Sep 09 22:20 CEST
+Output:
+----------------------------------------------------------
+Filters: "embedded worker runtime runs without runtime files on disk"
+Randomness seeded to: 490818510
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"embedded worker runtime runs without runtime files on disk" end time: Sep 09 22:20 CEST
+"embedded worker runtime runs without runtime files on disk" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 09 22:20 CEST

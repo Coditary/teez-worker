@@ -1,5 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 
+#include <fstream>
+
 #include <sol/sol.hpp>
 
 #include "teez/core/process.hpp"
@@ -119,4 +121,35 @@ TEST_CASE("assert_called_with validates indexed arguments", "[mock_binary]") {
     REQUIRE_FALSE(mismatch.valid());
     REQUIRE(MockFixture::error_message(mismatch).find("assert_called_with failed") !=
             std::string::npos);
+}
+
+TEST_CASE("mock_binary get_calls reads invocation log", "[mock_binary]") {
+    MockFixture fixture;
+    const sol::protected_function_result created = fixture.fn("mock_binary")("teez-mock-log");
+    REQUIRE(created.valid());
+    const sol::table mock = created;
+
+    teez::core::CommandSpec spec;
+    spec.command = mock["name"].get<std::string>();
+    spec.args = {"alpha", "beta"};
+    spec.env = {{"PATH", mock["env"]["PATH"].get<std::string>()}};
+    REQUIRE(teez::core::run_command_capture(spec).exit_code == 0);
+
+    const sol::table calls = mock["get_calls"]();
+    REQUIRE(calls.size() == 1);
+    REQUIRE(calls[1][1].get<std::string>() == "alpha");
+    REQUIRE(calls[1][2].get<std::string>() == "beta");
+}
+
+TEST_CASE("mock_binary get_calls rejects corrupt log entries", "[mock_binary]") {
+    MockFixture fixture;
+    const sol::protected_function_result created = fixture.fn("mock_binary")("teez-mock-bad-log");
+    REQUIRE(created.valid());
+    const sol::table mock = created;
+
+    std::ofstream(mock["log_path"].get<std::string>()) << "not-json\n";
+
+    const sol::protected_function_result calls = mock["get_calls"]();
+    REQUIRE_FALSE(calls.valid());
+    REQUIRE(MockFixture::error_message(calls).find("invalid calls.log entry") != std::string::npos);
 }

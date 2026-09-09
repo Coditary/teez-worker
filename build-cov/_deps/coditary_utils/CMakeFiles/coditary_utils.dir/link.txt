@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcoditary_utils.a CMakeFiles/coditary_utils.dir/src/glob.cpp.o CMakeFiles/coditary_utils.dir/src/string_match.cpp.o CMakeFiles/coditary_utils.dir/src/strings.cpp.o CMakeFiles/coditary_utils.dir/src/io.cpp.o CMakeFiles/coditary_utils.dir/src/path.cpp.o
+/usr/bin/ranlib libcoditary_utils.a

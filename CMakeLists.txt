@@ -81,6 +81,7 @@ add_executable(teez_worker_tests
     tests/test_http.cpp
     tests/test_main_integration.cpp
     tests/test_mock_binary.cpp
+    tests/test_mock_file.cpp
     tests/test_mock_http.cpp
     tests/test_runner.cpp
 )

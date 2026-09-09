@@ -1,0 +1,22 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/cmake_install.cmake",
+		"/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez-core-build/cmake_install.cmake",
+		"/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/sol2-build/cmake_install.cmake",
+		"/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/json-build/cmake_install.cmake",
+		"/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/zstd-build/cmake_install.cmake",
+		"/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/zstd-build/lib/cmake_install.cmake",
+		"/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/coditary_utils/cmake_install.cmake",
+		"/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/coditary_fs/cmake_install.cmake",
+		"/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/coditary_data/cmake_install.cmake",
+		"/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/std-cpp-parser/cmake_install.cmake",
+		"/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/yyjson-build/cmake_install.cmake",
+		"/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/coditary_lua/cmake_install.cmake",
+		"/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/coditary_net/cmake_install.cmake",
+		"/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/catch2-build/cmake_install.cmake",
+		"/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/catch2-build/src/cmake_install.cmake",
+		"/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/httplib-build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

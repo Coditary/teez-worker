@@ -68,3 +68,44 @@ TEST_CASE("mock_http_proxy intercepts http hostnames", "[mock_http]") {
     REQUIRE(result.exit_code == 0);
     REQUIRE(result.stdout_text.find("ok") != std::string::npos);
 }
+
+TEST_CASE("mock_http_server records POST bodies and filters requests", "[mock_http]") {
+    MockHttpFixture fixture;
+    const sol::protected_function_result created = fixture.fn("mock_http_server")();
+    REQUIRE(created.valid());
+    const sol::table server = created;
+
+    sol::table route_config = fixture.lua.create_table_with("status", 201, "body", "created");
+    server["route"]("POST", "/items", route_config);
+
+    const auto result = teez::core::run_command_capture({
+        .command = "curl",
+        .args = {"-s", "-X", "POST", "-d", "payload",
+                 server["url"].get<std::string>() + "/items"},
+    });
+    REQUIRE(result.exit_code == 0);
+    REQUIRE(result.stdout_text.find("created") != std::string::npos);
+
+    const sol::table requests = server["get_requests"]("POST", "/items");
+    REQUIRE(requests.size() == 1);
+    REQUIRE(requests[1]["body"].get<std::string>() == "payload");
+
+    const sol::table filtered = server["get_requests"]("GET", "/items");
+    REQUIRE(filtered.size() == 0);
+}
+
+TEST_CASE("mock_http_proxy returns 404 for unconfigured hosts", "[mock_http]") {
+    MockHttpFixture fixture;
+    const sol::protected_function_result created = fixture.fn("mock_http_proxy")();
+    REQUIRE(created.valid());
+    const sol::table proxy = created;
+
+    teez::core::CommandSpec spec;
+    spec.command = "curl";
+    spec.args = {"-s", "-o", "/dev/null", "-w", "%{http_code}", "http://missing.example.test/"};
+    spec.env = {{"http_proxy", proxy["env"]["http_proxy"].get<std::string>()}};
+
+    const auto result = teez::core::run_command_capture(spec);
+    REQUIRE(result.exit_code == 0);
+    REQUIRE(result.stdout_text.find("404") != std::string::npos);
+}
