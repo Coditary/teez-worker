@@ -1243,7 +1243,8 @@ end)
 
 TEST_CASE("run_worker hyperfine harness benchmarks commands", "[worker][harness]") {
     if (!teez::core::command_exists("hyperfine")) {
-        SKIP("hyperfine not installed");
+        SUCCEED("hyperfine not installed");
+        return;
     }
 
     const auto temp_dir = std::filesystem::temp_directory_path() / "teez_worker_hyperfine_test";

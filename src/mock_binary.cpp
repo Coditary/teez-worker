@@ -21,8 +21,17 @@ namespace {
 
 std::atomic<int> g_mock_counter{0};
 
-std::string lua_long_string(const std::string& value) {
-    return "[[" + value + "]]";
+std::string shell_single_quote(const std::string& value) {
+    std::string quoted = "'";
+    for (const char ch : value) {
+        if (ch == '\'') {
+            quoted += "'\\''";
+        } else {
+            quoted.push_back(ch);
+        }
+    }
+    quoted.push_back('\'');
+    return quoted;
 }
 
 std::vector<std::vector<std::string>> read_mock_calls(const std::filesystem::path& log_path) {
@@ -141,30 +150,21 @@ void write_mock_executable(const std::filesystem::path& executable,
                            const std::filesystem::path& log_path, int exit_code,
                            const std::string& stdout_text, const std::string& stderr_text) {
     std::ostringstream script;
-    script << "#!/usr/bin/env lua\n"
-           << "local log_path = " << lua_long_string(log_path.string()) << "\n"
-           << "local logfile = io.open(log_path, \"a\")\n"
-           << "if not logfile then\n"
-           << "  io.stderr:write(\"mock_binary: failed to open calls.log\\n\")\n"
-           << "  os.exit(126)\n"
-           << "end\n"
-           << "local args = {}\n"
-           << "for i = 1, #arg do\n"
-           << "  args[i] = arg[i]\n"
-           << "end\n"
-           << "local function json_escape(value)\n"
-           << "  return '\"' .. value:gsub('\\\\', '\\\\\\\\'):gsub('\"', '\\\\\"'):gsub('\\n', "
-              "'\\\\n') .. '\"'\n"
-           << "end\n"
-           << "local encoded = {}\n"
-           << "for i = 1, #args do\n"
-           << "  encoded[i] = json_escape(args[i])\n"
-           << "end\n"
-           << "logfile:write(\"[\" .. table.concat(encoded, \",\") .. \"]\\n\")\n"
-           << "logfile:close()\n"
-           << "io.stdout:write(" << lua_long_string(stdout_text) << ")\n"
-           << "io.stderr:write(" << lua_long_string(stderr_text) << ")\n"
-           << "os.exit(" << exit_code << ")\n";
+    script << "#!/bin/sh\n"
+           << "log_path=" << shell_single_quote(log_path.string()) << "\n"
+           << "{\n"
+           << "  printf '['\n"
+           << "  first=1\n"
+           << "  for arg in \"$@\"; do\n"
+           << "    escaped=$(printf '%s' \"$arg\" | sed 's/\\\\/\\\\\\\\/g; s/\"/\\\\\"/g')\n"
+           << "    if [ \"$first\" -eq 1 ]; then first=0; else printf ','; fi\n"
+           << "    printf '\"%s\"' \"$escaped\"\n"
+           << "  done\n"
+           << "  printf ']\\n'\n"
+           << "} >> \"$log_path\"\n"
+           << "printf '%s' " << shell_single_quote(stdout_text) << "\n"
+           << "printf '%s' " << shell_single_quote(stderr_text) << " 1>&2\n"
+           << "exit " << exit_code << "\n";
 
     std::ofstream file(executable);
     if (!file.is_open()) {
