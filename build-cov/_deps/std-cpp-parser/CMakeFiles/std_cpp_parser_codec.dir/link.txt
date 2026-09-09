@@ -1,2 +1,0 @@
-/usr/bin/ar qc libstd_cpp_parser_codec.a CMakeFiles/std_cpp_parser_codec.dir/src/codec.cpp.o
-/usr/bin/ranlib libstd_cpp_parser_codec.a

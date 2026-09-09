@@ -104,6 +104,7 @@ cmd_coverage() {
         --exclude '.*/build/.*'
         --exclude '.*/CMakeFiles/.*'
         --gcov-ignore-errors=source_not_found
+        --gcov-ignore-errors=no_working_dir_found
         --fail-under-line "${COVERAGE_MIN}"
         --print-summary
     )

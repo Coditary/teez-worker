@@ -1,5 +1,0 @@
-if(EXISTS "/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests-b12d07c_tests.cmake")
-  include("/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/teez_worker_tests-b12d07c_tests.cmake")
-else()
-  add_test(teez_worker_tests_NOT_BUILT-b12d07c teez_worker_tests_NOT_BUILT-b12d07c)
-endif()

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libcoditary_lua_data.a CMakeFiles/coditary_lua_data.dir/src/data.cpp.o
-/usr/bin/ranlib libcoditary_lua_data.a

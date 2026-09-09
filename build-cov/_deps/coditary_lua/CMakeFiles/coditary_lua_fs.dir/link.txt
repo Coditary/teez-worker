@@ -1,2 +1,0 @@
-/usr/bin/ar qc libcoditary_lua_fs.a CMakeFiles/coditary_lua_fs.dir/src/fs.cpp.o
-/usr/bin/ranlib libcoditary_lua_fs.a

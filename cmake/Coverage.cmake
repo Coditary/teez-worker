@@ -142,6 +142,7 @@ function(teez_add_coverage_target target_name project_label)
         --exclude '.*/build/.*'
         --exclude '.*/CMakeFiles/.*'
         --gcov-ignore-errors=source_not_found
+        --gcov-ignore-errors=no_working_dir_found
         --html-details "${_output_dir}/index.html"
         --txt "${_summary}"
         --print-summary

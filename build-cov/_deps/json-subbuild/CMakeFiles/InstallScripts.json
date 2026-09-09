@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/Leodoras/Dev/Coditary-Bundle/teez/teez-worker/build-cov/_deps/json-subbuild/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
