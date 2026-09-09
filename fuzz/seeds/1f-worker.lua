@@ -1,0 +1,5 @@
+describe("fuzz", function()
+  it("noop", function()
+    assert(true)
+  end)
+end)

@@ -1,0 +1,74 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    name: ${{ matrix.check }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        check: [format, security, lint, test, coverage, fuzz]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: teez-worker
+
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository_owner }}/teez-core
+          path: teez-core
+
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository_owner }}/Shared-Cpp
+          path: teez-core/Shared-Cpp
+
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository_owner }}/Shared-Cpp
+          path: teez-worker/Shared-Cpp
+
+      - name: Install dependencies
+        run: |
+          sudo rm -f /etc/apt/sources.list.d/google-chrome*.list
+          for attempt in 1 2 3; do
+            sudo apt-get update && break
+            sleep 5
+          done
+          sudo apt-get install -y \
+            build-essential \
+            clang \
+            clang-format \
+            clang-tidy \
+            cmake \
+            cppcheck \
+            curl \
+            gcovr \
+            libcurl4-openssl-dev \
+            liblua5.4-dev \
+            ninja-build \
+            pkg-config \
+            zlib1g-dev
+
+      - name: Run ${{ matrix.check }}
+        working-directory: teez-worker
+        env:
+          BUILD_DIR: /tmp/teez-worker-ci-${{ matrix.check }}-build
+          FUZZ_BUILD_DIR: /tmp/teez-worker-ci-fuzz-build
+          TMPDIR: /tmp/teez-worker-ci-${{ matrix.check }}-tmp
+          CCACHE_DISABLE: 1
+          FUZZ_SECONDS: 30
+          COVERAGE_MIN: 80
+        run: |
+          chmod +x scripts/ci.sh
+          ./scripts/ci.sh ${{ matrix.check }}
